@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تماس | GTC</title>
+<meta name="description" content="راه‌های تماس با سازمان فرضی GTC — یک اثر طنز.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="ناوبری اصلی">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="">
+      <span><b>GTC</b><span>GLOBAL TERMINATION COMMAND</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="باز کردن منو" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="about.html">دربارهٔ ما</a></li>
+      <li><a href="articles.html">بایگانی ایده‌ها</a></li>
+      <li><a href="contact.html">تماس</a></li>
+      <li><a class="btn btn-primary nav-cta" href="signup.html">شروع نام‌نویسی</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page container">
+  <header class="page-head reveal">
+    <p class="eyebrow">CONTACT</p>
+    <h1>تماس با ما</h1>
+    <p class="lead">
+      ما همیشه در دسترس هستیم و هرگز پاسخ نمی‌دهیم. این paradoxical نیست؛
+      این یک مدل ارتباطی جدید است.
+    </p>
+  </header>
+
+  <div class="form-grid reveal">
+    <!-- فرم -->
+    <div class="panel">
+      <h2>ارسال پیام</h2>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="c-name">نام شما</label>
+          <input id="c-name" name="name" type="text" placeholder="نام یا مستعار" required maxlength="60">
+        </div>
+        <div class="field">
+          <label for="c-email">ایمیل</label>
+          <input id="c-email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="c-subject">موضوع</label>
+          <select id="c-subject" name="subject">
+            <option value="ایده">ارسال ایده</option>
+            <option value="سؤال">سؤال عمومی</option>
+            <option value="شکایت">شکایت</option>
+            <option value="چیز دیگری">چیز دیگری</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">پیام</label>
+          <textarea id="c-message" name="message" placeholder="بنویسید. ما می‌خوانیم و بعد فراموش می‌کنیم." required></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">ارسال پیام</button>
+      </form>
+
+      <div id="contact-success" class="success hidden">
+        <p class="eyebrow">RECEIVED</p>
+        <h2>پیام شما ثبت شد.</h2>
+        <p class="muted">
+          کسی هرگز پاسخ نخواهد داد. اما این پیام تا ابد در جایی از اینترنت باقی می‌ماند.
+          ما این را نوعی جاودانگی می‌دانیم.
+        </p>
+        <div class="hero-actions" style="justify-content:center">
+          <a class="btn btn-ghost" href="index.html">بازگشت به خانه</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- اطلاعات -->
+    <div>
+      <div class="panel" style="margin-bottom:1.2rem">
+        <h2>اطلاعات تماس</h2>
+        <ul class="info-list">
+          <li><b>پناهگاه مرکزی</b><span>زیر دریای خزر، طبقهٔ منفی هفت، واحد ۳</span></li>
+          <li><b>ایمیل</b><span>hello@gtc.example — کسی این را نمی‌خواند</span></li>
+          <li><b>تلفن</b><span>ما تلفن نداریم. ما اهل تلفن نیستیم.</span></li>
+          <li><b>ساعات کاری</b><span>همیشه. هیچ‌وقت. هر دو.</span></li>
+          <li><b>زمان پاسخ‌گویی</b><span>هرگز — اما با علاقه</span></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>پرسش‌های پرتکرار</h2>
+        <details>
+          <summary>آیا این سازمان واقعی است؟</summary>
+          <p>نه. و اگر هم بود، ما به شما نمی‌گفتیم.</p>
+        </details>
+        <details>
+          <summary>آیا نام‌نویسی هزینه دارد؟</summary>
+          <p>نه. فقط وقت شما. که البته باارزش‌ترین دارایی‌تان است.</p>
+        </details>
+        <details>
+          <summary>اگر نظرم عوض شد چه؟</summary>
+          <p>فرم را دوباره پر کنید. ما هیچ‌وقت چیزی را پاک نمی‌کنیم — حتی چیزهایی که باید پاک می‌کردیم.</p>
+        </details>
+        <details>
+          <summary>آیا این وب‌سایت جدی است؟</summary>
+          <p>قطعاً نه. این یک پروژهٔ داستانی و طنز است. هیچ‌کدام از محتوای آن واقعی نیست و هیچ فعالیت واقعی انجام نمی‌شود.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <p class="footer-tag">ONE PLANET. ONE MISSION. NO TOMORROW.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="about.html">دربارهٔ ما</a></li>
+        <li><a href="articles.html">بایگانی ایده‌ها</a></li>
+        <li><a href="signup.html">نام‌نویسی</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">
+      ⚠️ این وب‌سایت یک <strong>اثر داستانی و طنز</strong> است. سازمان «GTC» وجود خارجی ندارد
+      و هیچ فعالیت واقعی انجام نمی‌دهد.
+    </p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
