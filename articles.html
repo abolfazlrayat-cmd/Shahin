@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بایگانی ایده‌ها | GTC</title>
+<meta name="description" content="مقاله‌ها و ایده‌های کاربران برای پایان دادن به جهان — یک اثر طنز.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="ناوبری اصلی">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="">
+      <span><b>GTC</b><span>GLOBAL TERMINATION COMMAND</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="باز کردن منو" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="about.html">دربارهٔ ما</a></li>
+      <li><a href="articles.html">بایگانی ایده‌ها</a></li>
+      <li><a href="contact.html">تماس</a></li>
+      <li><a class="btn btn-primary nav-cta" href="signup.html">شروع نام‌نویسی</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page container">
+  <header class="page-head reveal">
+    <p class="eyebrow">ARCHIVE</p>
+    <h1>بایگانی ایده‌ها</h1>
+    <p class="lead">
+      هر ایده‌ای که در این صفحه می‌خوانید توسط یک انسانِ واقعی نوشته شده است —
+      و هیچ‌کدام، حتی یکی، تا امروز کار نکرده است. ما این را یک دستاورد می‌دانیم.
+    </p>
+  </header>
+
+  <div class="toolbar reveal">
+    <input id="article-search" type="search" placeholder="جست‌وجو در عنوان، متن یا نام نویسنده…">
+    <select id="article-filter" aria-label="فیلتر دسته‌بندی">
+      <option value="all">همهٔ دسته‌ها</option>
+      <option value="پژوهش">پژوهش</option>
+      <option value="ایده">ایده</option>
+      <option value="راهنما">راهنما</option>
+      <option value="طنز">طنز</option>
+    </select>
+    <button id="toggle-compose" class="btn btn-primary" type="button">+ ثبت ایده‌ی جدید</button>
+  </div>
+
+  <!-- فرم نوشتن مقاله -->
+  <section id="compose" class="panel hidden reveal" style="margin-bottom:2rem">
+    <p class="eyebrow">NEW SUBMISSION</p>
+    <h2>ثبت ایدهٔ نابودی</h2>
+    <p class="muted" style="margin-bottom:1.5rem">
+      ایده‌تان را بنویسید. ما آن را در همین صفحه منتشر می‌کنیم و هیچ‌وقت به شما پاسخ نمی‌دهیم.
+    </p>
+
+    <form id="article-form" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="a-title">عنوان ایده</label>
+          <input id="a-title" name="title" type="text" placeholder="مثلاً: چگونه ماه را قانع کنیم استعفا دهد" required maxlength="90">
+        </div>
+
+        <div class="field">
+          <label for="a-author">نام نویسنده <span class="hint">(می‌تواند مستعار باشد)</span></label>
+          <input id="a-author" name="author" type="text" placeholder="مثلاً: کاربر ۹۱۷" maxlength="50">
+        </div>
+
+        <div class="field full">
+          <label for="a-category">دسته‌بندی</label>
+          <select id="a-category" name="category">
+            <option value="ایده">ایده</option>
+            <option value="پژوهش">پژوهش</option>
+            <option value="راهنما">راهنما</option>
+            <option value="طنز">طنز</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="a-body">متن ایده</label>
+          <textarea id="a-body" name="body" placeholder="با جزئیات بنویسید. ما عجله‌ای نداریم." required></textarea>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block" type="submit">انتشار ایده</button>
+    </form>
+  </section>
+
+  <!-- فهرست مقاله‌ها -->
+  <section id="articles-list" class="articles-grid" aria-live="polite"></section>
+
+  <p id="empty-state" class="empty hidden">
+    چیزی پیدا نشد. شاید بهتر است خودتان چیزی بنویسید.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <p class="footer-tag">ONE PLANET. ONE MISSION. NO TOMORROW.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="about.html">دربارهٔ ما</a></li>
+        <li><a href="contact.html">تماس</a></li>
+        <li><a href="signup.html">نام‌نویسی</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">
+      ⚠️ این وب‌سایت یک <strong>اثر داستانی و طنز</strong> است. تمام مقاله‌ها ساختگی‌اند
+      و هیچ‌کدام دستورالعمل واقعی نیستند. مقالات ثبت‌شده فقط در مرورگر خود شما ذخیره می‌شوند.
+    </p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
