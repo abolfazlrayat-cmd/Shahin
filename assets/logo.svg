@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="نشان سازمان GTC">
+  <defs>
+    <radialGradient id="globeGrad" cx="40%" cy="30%" r="82%">
+      <stop offset="0%" stop-color="#f2f2f4"/>
+      <stop offset="55%" stop-color="#bcbcc3"/>
+      <stop offset="100%" stop-color="#6a6a72"/>
+    </radialGradient>
+    <clipPath id="globeClip"><circle cx="256" cy="292" r="118"/></clipPath>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <!-- حلقه‌های بیرونی -->
+  <circle cx="256" cy="256" r="246" fill="none" stroke="#c1121f" stroke-width="7"/>
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#c1121f" stroke-width="2" opacity=".5"/>
+
+  <!-- انفجار سرخ پشت کره -->
+  <g fill="#a4161a">
+    <path d="M256 292 m-150 0 a150 150 0 0 1 300 0 z"/>
+    <g>
+      <path d="M256 100 L274 158 L238 158 Z"/>
+      <path d="M256 100 L274 158 L238 158 Z" transform="rotate(25 256 292)"/>
+      <path d="M256 100 L274 158 L238 158 Z" transform="rotate(-25 256 292)"/>
+      <path d="M256 100 L274 158 L238 158 Z" transform="rotate(50 256 292)"/>
+      <path d="M256 100 L274 158 L238 158 Z" transform="rotate(-50 256 292)"/>
+      <path d="M256 100 L274 158 L238 158 Z" transform="rotate(75 256 292)"/>
+      <path d="M256 100 L274 158 L238 158 Z" transform="rotate(-75 256 292)"/>
+    </g>
+  </g>
+
+  <!-- کرهٔ زمین -->
+  <circle cx="256" cy="292" r="118" fill="url(#globeGrad)"/>
+  <g clip-path="url(#globeClip)">
+    <g fill="#17171b">
+      <path d="M150 212 q30-26 60-13 q22 10 14 30 q-8 20-30 24 q-26 4-38-12 q-10-14-6-29z"/>
+      <path d="M302 198 q40-14 66 6 q22 18 12 44 q-10 26-40 30 q-30 4-42-16 q-12-22 4-64z"/>
+      <path d="M200 330 q24-6 30 14 q6 22-8 36 q-16 14-28 0 q-10-14 6-50z"/>
+      <path d="M300 320 q26-8 36 12 q10 22-6 38 q-18 16-34 2 q-14-16 4-52z"/>
+    </g>
+
+    <!-- ترک‌های سرخ با هاله -->
+    <g fill="none" stroke="#e01e37" stroke-width="10" stroke-linecap="round" opacity=".35" filter="url(#soft)">
+      <path d="M256 174 L246 220 L270 250 L252 292 L272 330 L258 372 L266 410"/>
+      <path d="M246 220 L206 244 L188 290 L196 340"/>
+      <path d="M270 250 L312 240 L336 268 L330 316 L300 350"/>
+    </g>
+    <g fill="none" stroke="#e01e37" stroke-width="4" stroke-linecap="round">
+      <path d="M256 174 L246 220 L270 250 L252 292 L272 330 L258 372 L266 410"/>
+      <path d="M246 220 L206 244 L188 290 L196 340"/>
+      <path d="M270 250 L312 240 L336 268 L330 316 L300 350"/>
+      <path d="M252 292 L212 300 L186 340"/>
+      <path d="M272 330 L310 350"/>
+    </g>
+  </g>
+  <circle cx="256" cy="292" r="118" fill="none" stroke="#0b0b0d" stroke-width="4"/>
+
+  <!-- قطعات فرو ریخته -->
+  <g fill="#9a9aa2">
+    <path d="M300 396 l14 10 l-8 14 l-14 -10 z"/>
+    <path d="M222 404 l12 9 l-7 12 l-12 -9 z"/>
+    <path d="M268 412 l10 8 l-6 11 l-10 -8 z"/>
+  </g>
+
+  <!-- موشک -->
+  <g>
+    <path d="M224 118 L196 168 L224 154 Z" fill="#c9c9d1"/>
+    <path d="M288 118 L316 168 L288 154 Z" fill="#c9c9d1"/>
+    <path d="M256 34 L288 126 H224 Z" fill="#ececef"/>
+    <path d="M224 120 H288 V152 H224 Z" fill="#d5d5da"/>
+    <circle cx="256" cy="94" r="11" fill="#17171b"/>
+  </g>
+
+  <!-- شاخه‌های غار -->
+  <g fill="#cfcfd6">
+    <ellipse cx="162.7" cy="441.2" rx="12" ry="26" transform="rotate(122 162.7 441.2)"/>
+    <ellipse cx="119.2" cy="402.8" rx="12" ry="26" transform="rotate(141 119.2 402.8)"/>
+    <ellipse cx="90.6"  cy="352.2" rx="12" ry="26" transform="rotate(160 90.6 352.2)"/>
+    <ellipse cx="80"    cy="292"   rx="12" ry="26" transform="rotate(180 80 292)"/>
+    <ellipse cx="90.6"  cy="231.8" rx="12" ry="26" transform="rotate(200 90.6 231.8)"/>
+    <ellipse cx="119.2" cy="181.2" rx="12" ry="26" transform="rotate(219 119.2 181.2)"/>
+    <ellipse cx="162.7" cy="142.8" rx="12" ry="26" transform="rotate(238 162.7 142.8)"/>
+
+    <ellipse cx="349.3" cy="441.2" rx="12" ry="26" transform="rotate(238 349.3 441.2)"/>
+    <ellipse cx="392.8" cy="402.8" rx="12" ry="26" transform="rotate(219 392.8 402.8)"/>
+    <ellipse cx="421.4" cy="352.2" rx="12" ry="26" transform="rotate(200 421.4 352.2)"/>
+    <ellipse cx="432"   cy="292"   rx="12" ry="26" transform="rotate(180 432 292)"/>
+    <ellipse cx="421.4" cy="231.8" rx="12" ry="26" transform="rotate(160 421.4 231.8)"/>
+    <ellipse cx="392.8" cy="181.2" rx="12" ry="26" transform="rotate(141 392.8 181.2)"/>
+    <ellipse cx="349.3" cy="142.8" rx="12" ry="26" transform="rotate(122 349.3 142.8)"/>
+  </g>
+
+  <!-- ستاره‌های کناری -->
+  <g fill="#e4e4e8">
+    <path d="M56 280 L59 289 L68 292 L59 295 L56 304 L53 295 L44 292 L53 289 Z"/>
+    <path d="M456 280 L459 289 L468 292 L459 295 L456 304 L453 295 L444 292 L453 289 Z"/>
+  </g>
+
+  <!-- نشان پایین -->
+  <g fill="#e4e4e8">
+    <path d="M256 416 L288 452 H270 V486 H242 V452 H224 Z"/>
+    <rect x="176" y="450" width="52" height="13" rx="2"/>
+    <rect x="284" y="450" width="52" height="13" rx="2"/>
+  </g>
+</svg>
