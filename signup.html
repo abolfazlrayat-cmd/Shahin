@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نام‌نویسی | GTC</title>
+<meta name="description" content="فرم نام‌نویسی در سازمان فرضی GTC — یک اثر طنز.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="ناوبری اصلی">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="">
+      <span><b>GTC</b><span>GLOBAL TERMINATION COMMAND</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="باز کردن منو" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="about.html">دربارهٔ ما</a></li>
+      <li><a href="articles.html">بایگانی ایده‌ها</a></li>
+      <li><a href="contact.html">تماس</a></li>
+      <li><a class="btn btn-primary nav-cta active" href="signup.html">شروع نام‌نویسی</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page container">
+  <header class="page-head reveal">
+    <p class="eyebrow">REGISTRATION</p>
+    <h1>فرم نام‌نویسی</h1>
+    <p class="lead">
+      پر کردن این فرم حدود دو دقیقه وقت می‌گیرد. ما هیچ‌وقت با شما تماس نمی‌گیریم،
+      پس نگران نباشید. فقط نامی که دوست دارید خطاب شوید را بنویسید و بقیه را به ما بسپارید.
+    </p>
+  </header>
+
+  <div class="panel reveal">
+    <form id="signup-form" novalidate>
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="codename">نام مستعار <span class="hint">(هرچه دوست دارید خطاب شوید)</span></label>
+          <input id="codename" name="codename" type="text" placeholder="مثلاً: شهروندِ چهارم" required maxlength="40">
+        </div>
+
+        <div class="field">
+          <label for="city">شهر یا مختصات محل سکونت</label>
+          <input id="city" name="city" type="text" placeholder="مثلاً: تهران — یا ۳۵.۶۸ / ۵۱.۳۸" required maxlength="60">
+        </div>
+
+        <div class="field">
+          <label for="email">ایمیل <span class="hint">(اختیاری — ما نمی‌خوانیمش)</span></label>
+          <input id="email" name="email" type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="field">
+          <label for="role">نقش مورد علاقه</label>
+          <select id="role" name="role">
+            <option value="پژوهشگر">پژوهشگر</option>
+            <option value="ایده‌پرداز">ایده‌پرداز</option>
+            <option value="تحلیلگر">تحلیلگر</option>
+            <option value="مشاور سکوت">مشاور سکوت</option>
+            <option value="هنوز نمی‌دانم">هنوز نمی‌دانم</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="reason">چرا می‌خواهید عضو شوید؟ <span class="hint">(صادق باشید، ما قضاوت نمی‌کنیم)</span></label>
+          <textarea id="reason" name="reason" placeholder="مثلاً: خسته‌ام. یا: کنجکاوم. یا: دوشنبه‌ها برایم سخت است." required></textarea>
+        </div>
+
+      </div>
+
+      <label class="check">
+        <input type="checkbox" name="confirm" required>
+        <span>
+          تأیید می‌کنم که این وب‌سایت یک <strong>اثر داستانی و طنز</strong> است و
+          هیچ نیت واقعی در آن وجود ندارد. همچنین تأیید می‌کنم که موجود زنده‌ای را
+          در جریان پر کردن این فرم آزار نداده‌ام.
+        </span>
+      </label>
+
+      <button class="btn btn-primary btn-block" type="submit">ثبت نام‌نویسی</button>
+    </form>
+
+    <!-- پیام موفقیت -->
+    <div id="signup-success" class="success hidden">
+      <p class="eyebrow">WELCOME ABOARD</p>
+      <h2>ثبت شد.</h2>
+      <p>به خانواده خوش آمدید، <strong data-out="codename">—</strong>.</p>
+      <p class="muted">کد عضویت شما:</p>
+      <span class="code" data-out="code">GTC-XXXX-0000</span>
+      <p class="muted">محل ثبت‌شده: <span data-out="city">—</span></p>
+      <p class="muted">
+        لطفاً این کد را جایی امن نگه دارید. هیچ‌کس هرگز آن را از شما نمی‌پرسد،
+        ولی نگه داشتنش حس خوبی دارد.
+      </p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-ghost" href="articles.html">مشاهدهٔ بایگانی ایده‌ها</a>
+        <a class="btn btn-ghost" href="index.html">بازگشت به خانه</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <p class="footer-tag">ONE PLANET. ONE MISSION. NO TOMORROW.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="about.html">دربارهٔ ما</a></li>
+        <li><a href="articles.html">بایگانی ایده‌ها</a></li>
+        <li><a href="contact.html">تماس</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">
+      ⚠️ این وب‌سایت یک <strong>اثر داستانی و طنز</strong> است. سازمان «GTC» وجود خارجی ندارد
+      و هیچ فعالیت واقعی انجام نمی‌دهد.
+    </p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
